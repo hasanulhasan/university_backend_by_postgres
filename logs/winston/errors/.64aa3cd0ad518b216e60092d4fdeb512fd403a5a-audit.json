@@ -1,0 +1,15 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 14
+    },
+    "auditLog": "C:\\Users\\HASAN\\Desktop\\university_postgre\\logs\\winston\\errors\\.64aa3cd0ad518b216e60092d4fdeb512fd403a5a-audit.json",
+    "files": [
+        {
+            "date": 1692815507913,
+            "name": "C:\\Users\\HASAN\\Desktop\\university_postgre\\logs\\winston\\errors\\phu-2023-24-08-00-error.log",
+            "hash": "a8592c8063855123eb0724f26a3cf3b5a41e3db3186e1e1cefa6d74df3d6da2c"
+        }
+    ],
+    "hashType": "sha256"
+}
