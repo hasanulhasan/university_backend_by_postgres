@@ -1,11 +1,10 @@
-import { PrismaClient, AcademicSemester, Prisma} from "@prisma/client";
+import { AcademicSemester, Prisma} from "@prisma/client";
 import { IGenericResponse } from "../../../interfaces/common";
 import { paginationHelpers } from "../../../helpers/paginationHelper";
 import { IPaginationOptions } from "../../../interfaces/pagintaion";
 import { IAcademicSemesterFilterRequest } from "./academicSemester.interfaces";
 import { AcademicSemesterSearchAbleFields } from "./academicSemester.constants";
-
-const prisma = new PrismaClient();
+import prisma from "../../../shared/prisma";
 
 const insertIntoDB = async (academicSemesterData: AcademicSemester) => {
   const result = await prisma.academicSemester.create({
@@ -46,7 +45,10 @@ const getAllFromDB = async (filters:IAcademicSemesterFilterRequest, options: IPa
   const result = await prisma.academicSemester.findMany({
     where: whereConditions,
     skip,
-    take: limit
+    take: limit,
+    orderBy: options.sortBy && options.sortOrder ? {
+      [options.sortBy]: options.sortOrder
+    } : { createdAt: 'desc' }
   });
 
   const total = await prisma.academicSemester.count();
@@ -60,6 +62,14 @@ const getAllFromDB = async (filters:IAcademicSemesterFilterRequest, options: IPa
   };
 }
 
+const getDataById = async (id: string): Promise<AcademicSemester | null>=> {
+  const result = await prisma.academicSemester.findUnique({
+    where: {
+      id: id
+    }
+  })
+  return result
+}
 export const AcademicSemesterService = {
-  insertIntoDB,getAllFromDB
+  insertIntoDB, getAllFromDB, getDataById
 }
