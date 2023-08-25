@@ -1,0 +1,1 @@
+export const AcademicSemesterSearchAbleFields = ['title', 'code','year', 'startMonth', 'endMonth']
