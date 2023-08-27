@@ -61,7 +61,7 @@ model Student {
   contactNo    String
   gender       String
   bloodGroup   String
-  createdAT    DateTime @default(now())
+  createdAt    DateTime @default(now())
   updatedAt    DateTime @updatedAt
 
   academicSemester     AcademicSemester   @relation(fields: [academicSelesterId], references: [id])
@@ -86,7 +86,7 @@ model Faculty {
   gender       String
   bloodGroup   String
   designation  String
-  createdAT    DateTime @default(now())
+  createdAt    DateTime @default(now())
   updatedAt    DateTime @updatedAt
 
   academicFaculty      AcademicFaculty    @relation(fields: [academicFacultyId], references: [id])
@@ -95,4 +95,27 @@ model Faculty {
   academicDepartmentId String
 
   @@map("faculties")
+}
+
+model Building {
+  id        String   @id @default(uuid())
+  title     String
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  Room      Room[]
+
+  @@map("buildings")
+}
+
+model Room {
+  id         String   @id @default(uuid())
+  roomNumber String
+  floor      String
+  createdAt  DateTime @default(now())
+  updatedAt  DateTime @updatedAt
+  
+  building   Building @relation(fields: [buildingId], references: [id])
+  buildingId String
+
+  @@map("rooms")
 }

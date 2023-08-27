@@ -1,0 +1,15 @@
+Sun Aug 27 2023 23:47:3 } [PH] error: 
+Invalid `prisma.building.create()` invocation:
+
+
+Operation 'createOne' for model 'Building' does not match any query.
+Sun Aug 27 2023 23:50:0 } [PH] error: 
+Invalid `prisma.building.create()` invocation:
+
+
+Operation 'createOne' for model 'Building' does not match any query.
+Sun Aug 27 2023 23:50:16 } [PH] error: 
+Invalid `prisma.building.create()` invocation:
+
+
+Operation 'createOne' for model 'Building' does not match any query.
