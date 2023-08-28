@@ -69,6 +69,21 @@
             "date": 1693158394705,
             "name": "C:\\Users\\HASAN\\Desktop\\university_postgre\\logs\\winston\\errors\\phu-2023-27-08-23-error.log",
             "hash": "a3c21dd6fab5702075b742cf1b44f930cd523ebfc3a334443075eb57edf81823"
+        },
+        {
+            "date": 1693159421193,
+            "name": "C:\\Users\\HASAN\\Desktop\\university_postgre\\logs\\winston\\errors\\phu-2023-28-08-00-error.log",
+            "hash": "138ede9f32b72b332465137bc925ab628407946b214c1213a816e15551a869bd"
+        },
+        {
+            "date": 1693223216540,
+            "name": "C:\\Users\\HASAN\\Desktop\\university_postgre\\logs\\winston\\errors\\phu-2023-28-08-17-error.log",
+            "hash": "745d99f1b206bcaa4fa11132a36493776f6435587c4a57ef5882fbbde14edb02"
+        },
+        {
+            "date": 1693242613947,
+            "name": "C:\\Users\\HASAN\\Desktop\\university_postgre\\logs\\winston\\errors\\phu-2023-28-08-23-error.log",
+            "hash": "99c70e87f92c53992189c7948920a7cd9b49966aac4fbad6df55f55fa96c5b40"
         }
     ],
     "hashType": "sha256"

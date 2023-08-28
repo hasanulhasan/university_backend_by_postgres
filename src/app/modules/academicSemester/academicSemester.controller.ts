@@ -25,9 +25,6 @@ const getAllSemesters = async (req: Request, res: Response, next: NextFunction) 
   try {
     const filters = pick(req.query, AcademicFilterableFields)
     const options = pick(req.query, ['limit', 'page', 'sortBy', 'sortOrder'])
-    
-    console.log('filters' , filters)
-    console.log('options', options)
 
     const result = await AcademicSemesterService.getAllFromDB(filters,options);
 

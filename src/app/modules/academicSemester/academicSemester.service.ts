@@ -29,7 +29,7 @@ const getAllFromDB = async (filters:IAcademicSemesterFilterRequest, options: IPa
     })
   }
   
-  if(Object.keys(filterData).length>0){
+  if(Object.keys(filterData).length > 0){
     andConditions.push({
       AND: Object.keys(filterData).map(key=> ({
         [key]: {
