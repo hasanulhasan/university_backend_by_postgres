@@ -20,7 +20,36 @@ const insertIntoDB =async (req:Request, res: Response, next: NextFunction) => {
   }
 }
 
+const getAllRoom =async (req:Request, res: Response, next: NextFunction) => {
+  try {
+    const result = await RoomService.getRooms();
+    sendResponse<Room[]>(res, {
+      statusCode: httpStatus.OK,
+      success: true,
+      message: "Rooms Fetched Successfully",
+      data: result
+    })
+  } catch (error) {
+    next(error)
+  }
+}
+
+const deleteRoom =async (req:Request, res: Response, next: NextFunction) => {
+  try {
+    const id = req.params.id;
+    const result = await RoomService.deleteRoomFromDB(id);
+    sendResponse<Room>(res, {
+      statusCode: httpStatus.OK,
+      success: true,
+      message: "Room Deleted Successfully",
+      data: result
+    })
+  } catch (error) {
+    next(error)
+  }
+}
+
 
 export const RoomController = {
-  insertIntoDB
+  insertIntoDB, getAllRoom, deleteRoom
 }
