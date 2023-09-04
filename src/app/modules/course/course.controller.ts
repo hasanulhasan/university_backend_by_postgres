@@ -18,6 +18,20 @@ const insertIntoDB =async (req:Request, res: Response, next: NextFunction) => {
   }
 }
 
+const getAllCourse = async (req: Request, res: Response, next: NextFunction) => {
+  try {
+    const result = await CourseService.getCourses();
+    sendResponse<Course[]>(res, {
+      statusCode: httpStatus.OK,
+      success: true,
+      message: 'Course fetched successfully',
+      data: result
+    })
+  } catch (error) {
+    next(error)
+  }
+}
+
 export const CourseController = {
-  insertIntoDB
+  insertIntoDB, getAllCourse
 }
