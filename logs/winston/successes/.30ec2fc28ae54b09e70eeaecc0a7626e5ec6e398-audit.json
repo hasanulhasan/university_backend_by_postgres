@@ -134,6 +134,16 @@
             "date": 1693848157391,
             "name": "C:\\Users\\HASAN\\Desktop\\university_postgre\\logs\\winston\\successes\\phu-2023-04-09-23-success.log",
             "hash": "6e3255d936b32a55af1588572595a3ab236e9fcbaa993d3836f1f9ceeb7bd86a"
+        },
+        {
+            "date": 1693853273683,
+            "name": "C:\\Users\\HASAN\\Desktop\\university_postgre\\logs\\winston\\successes\\phu-2023-05-09-00-success.log",
+            "hash": "a2715dfc912fa8c6b7fb42d096221286cc555553594a20d32c345388eb657a9a"
+        },
+        {
+            "date": 1693854000962,
+            "name": "C:\\Users\\HASAN\\Desktop\\university_postgre\\logs\\winston\\successes\\phu-2023-05-09-01-success.log",
+            "hash": "fb6c9e711b789a0e95e5a1fddc296fd71ee420b8c2b41db34abdda1cbea049f4"
         }
     ],
     "hashType": "sha256"
