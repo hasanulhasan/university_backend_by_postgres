@@ -7,8 +7,8 @@ import { ICourseCreateData } from "./course.interface";
 const insertIntoDB = async (data: ICourseCreateData): Promise<any> => {
   const {preRequisiteCourses, ...courseData} = data;
 
-  const newCourse = await prisma.$transaction( async (transationClient)=> {
-    const result = await transationClient.course.create({
+  const newCourse = await prisma.$transaction( async (transactionClient)=> {
+    const result = await transactionClient.course.create({
       data: courseData
     })
 
@@ -18,7 +18,7 @@ const insertIntoDB = async (data: ICourseCreateData): Promise<any> => {
 
     if(preRequisiteCourses && preRequisiteCourses.length > 0){
       for (let i = 0; i<preRequisiteCourses.length; i++ ){
-        const createPreRequisite = await transationClient.courseToPrerequisite.create({
+        const createPreRequisite = await transactionClient.courseToPrerequisite.create({
           data: {
             courseId: result.id,
             preRequisiteId: preRequisiteCourses[i].courseId

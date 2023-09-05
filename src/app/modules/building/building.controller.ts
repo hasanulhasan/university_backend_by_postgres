@@ -38,6 +38,20 @@ const getAllBuildings =async (req:Request, res: Response, next: NextFunction) =>
   }
 }
 
+const deleteFromDB = async (req:Request, res: Response, next: NextFunction) => {
+  try {
+    const result = await BuildingService.deleteBuilding(req.params.id)
+     sendResponse<Building>(res, {
+      statusCode: httpStatus.OK,
+      success: true,
+      message: "Building Deleted Successfully",
+      data: result
+    })
+  } catch (error) {
+      next(error)
+  }
+}
+
 export const BuildingController = {
-  insertIntoDB, getAllBuildings
+  insertIntoDB, getAllBuildings, deleteFromDB
 }

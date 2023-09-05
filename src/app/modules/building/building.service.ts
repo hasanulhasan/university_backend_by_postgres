@@ -55,6 +55,16 @@ const getBuildings = async (filters:IBuildingFilterRequest, options: IPagination
   }
 }
 
+
+const deleteBuilding =async (id:string) => {
+  const result = await prisma.building.delete({
+    where: {
+      id: id
+    }
+  })
+  return result
+}
+
 export const BuildingService = {
-  insertIntoDB, getBuildings
+  insertIntoDB, getBuildings, deleteBuilding
 }

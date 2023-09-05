@@ -9,5 +9,6 @@ const router = express.Router();
 
 router.post('/', auth(ENUM_USER_ROLE.SUPER_ADMIN, ENUM_USER_ROLE.ADMIN) ,validateRequest(BuildingValidations.create), BuildingController.insertIntoDB);
 router.get('/', BuildingController.getAllBuildings)
+router.delete('/:id', BuildingController.deleteFromDB)
 
 export const BuildingRoutes = router
