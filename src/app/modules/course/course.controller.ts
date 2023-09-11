@@ -24,6 +24,20 @@ const getAllCourse = async (req: Request, res: Response, next: NextFunction) => 
     sendResponse<Course[]>(res, {
       statusCode: httpStatus.OK,
       success: true,
+      message: 'Courses fetched successfully',
+      data: result
+    })
+  } catch (error) {
+    next(error)
+  }
+}
+
+const getSingleCourse =async (req: Request, res: Response, next: NextFunction) => {
+  try {
+    const result = await CourseService.getCourse(req.params.id);
+    sendResponse<Course>(res, {
+      statusCode: httpStatus.OK,
+      success: true,
       message: 'Course fetched successfully',
       data: result
     })
@@ -33,5 +47,5 @@ const getAllCourse = async (req: Request, res: Response, next: NextFunction) => 
 }
 
 export const CourseController = {
-  insertIntoDB, getAllCourse
+  insertIntoDB, getAllCourse, getSingleCourse
 }

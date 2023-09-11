@@ -6,66 +6,6 @@
     "auditLog": "C:\\Users\\HASAN\\Desktop\\university_postgre\\logs\\winston\\errors\\.64aa3cd0ad518b216e60092d4fdeb512fd403a5a-audit.json",
     "files": [
         {
-            "date": 1692815507913,
-            "name": "C:\\Users\\HASAN\\Desktop\\university_postgre\\logs\\winston\\errors\\phu-2023-24-08-00-error.log",
-            "hash": "a8592c8063855123eb0724f26a3cf3b5a41e3db3186e1e1cefa6d74df3d6da2c"
-        },
-        {
-            "date": 1692845174612,
-            "name": "C:\\Users\\HASAN\\Desktop\\university_postgre\\logs\\winston\\errors\\phu-2023-24-08-08-error.log",
-            "hash": "4570fae63028b39e2acbcb60811105960fe70d8854820d795674542315240280"
-        },
-        {
-            "date": 1692847012315,
-            "name": "C:\\Users\\HASAN\\Desktop\\university_postgre\\logs\\winston\\errors\\phu-2023-24-08-09-error.log",
-            "hash": "84bdee59cf7dcc95f596c15b8159925ccdd4c5c25eacebfd59193cb86651992f"
-        },
-        {
-            "date": 1692855626256,
-            "name": "C:\\Users\\HASAN\\Desktop\\university_postgre\\logs\\winston\\errors\\phu-2023-24-08-11-error.log",
-            "hash": "cd6c6d3e44478177d797568a51ff87e40b7919a946de482e496f28f51c8027cb"
-        },
-        {
-            "date": 1692858027156,
-            "name": "C:\\Users\\HASAN\\Desktop\\university_postgre\\logs\\winston\\errors\\phu-2023-24-08-12-error.log",
-            "hash": "14b352541fa45bf0f979b0c6fba1f9d93761d19995ac7a74b809e003d0316e7e"
-        },
-        {
-            "date": 1692862836563,
-            "name": "C:\\Users\\HASAN\\Desktop\\university_postgre\\logs\\winston\\errors\\phu-2023-24-08-13-error.log",
-            "hash": "ed29ceb74b36e60d5daed82be3fb8a087f25e8ae44e0568cc2a5ad5516ab05fd"
-        },
-        {
-            "date": 1692864564944,
-            "name": "C:\\Users\\HASAN\\Desktop\\university_postgre\\logs\\winston\\errors\\phu-2023-24-08-14-error.log",
-            "hash": "80bd30c9fdafd75aa4b870b45ce00793636309e5786711d386818cd630be189d"
-        },
-        {
-            "date": 1692900412786,
-            "name": "C:\\Users\\HASAN\\Desktop\\university_postgre\\logs\\winston\\errors\\phu-2023-25-08-00-error.log",
-            "hash": "b1a794d38ba7aad56ca8687580eca341157e10caa6b0cf853de86bfb579b9243"
-        },
-        {
-            "date": 1692980657552,
-            "name": "C:\\Users\\HASAN\\Desktop\\university_postgre\\logs\\winston\\errors\\phu-2023-25-08-22-error.log",
-            "hash": "17c61b6fd126010a4332785bc3d10e7e52d8e10c316e47c23a95a0cb02c60162"
-        },
-        {
-            "date": 1692982804225,
-            "name": "C:\\Users\\HASAN\\Desktop\\university_postgre\\logs\\winston\\errors\\phu-2023-25-08-23-error.log",
-            "hash": "f80fd0f394dac109718e69b9bae9d55b6598bd4a7bb40665c06a98de592b3ce2"
-        },
-        {
-            "date": 1692986400648,
-            "name": "C:\\Users\\HASAN\\Desktop\\university_postgre\\logs\\winston\\errors\\phu-2023-26-08-00-error.log",
-            "hash": "38a34d3b338f87dd716a22803f1141d6f2f9a2964eb5a3e7d3585d0b20175a73"
-        },
-        {
-            "date": 1693027945423,
-            "name": "C:\\Users\\HASAN\\Desktop\\university_postgre\\logs\\winston\\errors\\phu-2023-26-08-11-error.log",
-            "hash": "9e9dc8da975ce24aca9a5081573d2c919552df01b866cb7c193fe6919a01ba58"
-        },
-        {
             "date": 1693158394705,
             "name": "C:\\Users\\HASAN\\Desktop\\university_postgre\\logs\\winston\\errors\\phu-2023-27-08-23-error.log",
             "hash": "a3c21dd6fab5702075b742cf1b44f930cd523ebfc3a334443075eb57edf81823"
@@ -149,6 +89,16 @@
             "date": 1693945393624,
             "name": "C:\\Users\\HASAN\\Desktop\\university_postgre\\logs\\winston\\errors\\phu-2023-06-09-02-error.log",
             "hash": "7cd787d657f0681fb4752959698f67c45f70d0da559fe1933a5ec3f6c5db667f"
+        },
+        {
+            "date": 1694364743174,
+            "name": "C:\\Users\\HASAN\\Desktop\\university_postgre\\logs\\winston\\errors\\phu-2023-10-09-22-error.log",
+            "hash": "44701827ed514204165155bbfd0482c6fa89fe175ef802365005827bfd283707"
+        },
+        {
+            "date": 1694365237237,
+            "name": "C:\\Users\\HASAN\\Desktop\\university_postgre\\logs\\winston\\errors\\phu-2023-10-09-23-error.log",
+            "hash": "635f44b83be5eb2e6f8a35ee1a408ab6a84bc4912bfe9dc6f4d82dfdc2933c1a"
         }
     ],
     "hashType": "sha256"

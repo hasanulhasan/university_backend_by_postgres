@@ -3,6 +3,7 @@ import httpStatus from "http-status";
 import ApiError from "../../../errors/ApiError";
 import prisma from "../../../shared/prisma";
 import { ICourseCreateData } from "./course.interface";
+import { Course } from "@prisma/client";
 
 const insertIntoDB = async (data: ICourseCreateData): Promise<any> => {
   const {preRequisiteCourses, ...courseData} = data;
@@ -59,6 +60,15 @@ const getCourses =async () => {
   return result
 }
 
+const getCourse =async (id: string): Promise<Course| null> => {
+  const result = await prisma.course.findUnique({
+    where: {
+      id: id
+    }
+  });
+  return result
+}
+
 export const CourseService = {
-  insertIntoDB, getCourses
+  insertIntoDB, getCourses, getCourse
 }
